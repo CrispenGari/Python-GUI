@@ -15,3 +15,15 @@ class SQL:
     ALL_STUDENTS = """
         SELECT * FROM `students`;
     """
+
+    GET_STUDENT_BY_ID = """
+        SELECT * FROM `students` WHERE id = ?;
+    """
+
+    DELETE_STUDENT_BY_ID = """
+        DELETE FROM `students` WHERE id = ?;
+    """
+
+    UPDATE_STUDENT_BY_ID = """
+        UPDATE `students` SET firstName = ?, lastName = ? WHERE id = ?;
+    """
